@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Spopify</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+            <h1>Kartik</h1>
+            </a>
+        </div>
+        <div class="menu" onclick="myFunction()"><i class="fa-solid fa-bars"></i></div>
+        <div class="navbar" id="navbar">
+            <a href="index.html">HOME</a>
+            <a href="https://kartikjournal.github.io/portfolio/about.html">ABOUT</a>
+            <a href="https://kartikjournal.github.io/portfolio/project.html">PROJECT</a>
+            <a href="https://kartikjournal.github.io/portfolio/contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="box" id="out">
+        <div class="img1">
+            <img src="./img/song2.jpg" alt="">
+        </div>
+        <audio id="player" src="./audio/Jealous_192(Ghantalele.com).mp3"></audio>
+        <div class="btn"> 
+          <button onclick="document.getElementById('player').play()">Play</button> 
+          <button onclick="document.getElementById('player').pause()">Pause</button> 
+          <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+          <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+          <a href="index.html">
+            <button>BACK</button>
+          </a>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="https://kit.fontawesome.com/5b47d5e209.js" crossorigin="anonymous"></script>
+</body>
+</html>
